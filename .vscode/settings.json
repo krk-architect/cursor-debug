@@ -1,0 +1,70 @@
+{
+    "csharp.debug.console": "integratedTerminal",
+    "csharp.debug.enableStepFiltering": false,
+    "csharp.debug.expressionEvaluationOptions.showRawValues": false,
+    "csharp.debug.justMyCode": false,
+    "csharp.debug.logging.diagnosticsLog.debugEngineAPITracing": "error",
+    "csharp.debug.logging.diagnosticsLog.startDebuggingTracing": true,
+    "csharp.debug.logging.engineLogging": false,
+    "csharp.debug.logging.exceptions": true,
+    "csharp.debug.logging.moduleLoad": false,
+    "csharp.debug.logging.processExit": false,
+    "csharp.debug.logging.programOutput": true,
+    "csharp.debug.logging.threadExit": false,
+    "csharp.debug.requireExactSource": false,
+    "csharp.debug.sourceFileMap": {},
+    "csharp.debug.stopAtEntry": false,
+    "csharp.debug.suppressJITOptimizations": true,
+    "csharp.debug.symbolOptions.cachePath": "C:\\Source\\Symbols",
+    "csharp.debug.symbolOptions.moduleFilter.mode": "loadAllButExcluded",
+    "csharp.debug.symbolOptions.searchMicrosoftSymbolServer": true,
+    "csharp.debug.symbolOptions.searchNuGetOrgSymbolServer": true,
+    "debug.allowBreakpointsEverywhere": true,
+    "debug.javascript.codelens.npmScripts": "all",
+    "debug.showVariableTypes": true,
+    "debug.terminal.clearBeforeReusing": true,
+    "dotnet.backgroundAnalysis.analyzerDiagnosticsScope": "fullSolution",
+    "dotnet.backgroundAnalysis.analyzerDiagnosticsScope": "openFiles",
+    "dotnet.backgroundAnalysis.compilerDiagnosticsScope": "fullSolution",
+    "dotnet.backgroundAnalysis.compilerDiagnosticsScope": "openFiles",
+    "dotnet.codeLens.enableReferencesCodeLens": true,
+    "dotnet.completion.showCompletionItemsFromUnimportedNamespaces": true,
+    "dotnet.server.path": "",
+    "dotnet.server.useOmnisharp": false,
+    "dotnet.server.waitForDebugger": false,
+    "dotnet.unitTests.runSettingsPath": "",
+    "dotnet.unitTestDebuggingOptions": {
+        "enableStepFiltering": true,
+        "expressionEvaluationOptions": {
+            "allowFastEvaluate": true,
+            "allowImplicitFuncEval": true,
+            "allowToString": true,
+            "showRawValues": false
+        },
+        "justMyCode": false,
+        "logging": {
+            "exceptions": true,
+            "moduleLoad": true,
+            "processExit": true,
+            "programOutput": true,
+            "threadExit": true
+        },
+        "requireExactSource": true,
+        "sourceFileMap": {},
+        "sourceLinkOptions": {
+            "*": {
+                "enabled": true
+            }
+        },
+        "suppressJITOptimizations": true,
+        "symbolOptions": {
+            "searchPaths": [
+                "C:\\Source\\Symbols"
+            ],
+            "searchMicrosoftSymbolServer": true,
+            "searchNuGetOrgSymbolServer": true
+        },
+        "targetArchitecture": "x86_64",
+        "type": "coreclr"
+    },
+}

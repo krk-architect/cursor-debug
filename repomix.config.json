@@ -1,0 +1,35 @@
+{
+    "output": {
+        "compress": false,
+        "copyToClipboard": false,
+        "directoryStructure": false,
+        "filePath": "repomix-output.md",
+        "fileSummary": false,
+        "git": {
+            "sortByChanges": false
+        },
+        "headerText": "This file is a merged representation of a subset of the codebase, containing specifically included files, combined into a single document by Repomix.",
+        "removeComments": false,
+        "removeEmptyLines": false,
+        "showLineNumbers": false,
+        "style": "markdown",
+        "topFilesLength": 50
+    },
+    "include": [
+        "**/*.sln",
+        "**/*.csproj",
+        "**/*.cs",
+        ".vscode/*.json"
+    ],
+    "ignore": {
+        "customPatterns": [
+            "**/bin/**",
+            "**/obj/**"
+        ],
+        "useDefaultPatterns": false,
+        "useGitignore": false
+    },
+    "security": {
+        "enableSecurityCheck": true
+    }
+}

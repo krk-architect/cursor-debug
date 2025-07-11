@@ -1,0 +1,42 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            // For further information visit https://github.com/dotnet/vscode-csharp/blob/main/debugger-launchjson.md
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/src/Console1/bin/Debug/net9.0/Console1.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/src/Console1",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": "Debug Unit Tests (Manual)",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command:pickProcess}",
+            "justMyCode": false
+        },
+        {
+            "name": "Debug Unit Tests (Automatic)",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${input:spawnTestsGetPid}",
+            "justMyCode": false
+        }
+    ],
+    "inputs": [
+        {
+            "id": "spawnTestsGetPid",
+            "type": "command",
+            "command": "shellCommand.execute",
+            "args": {
+                "useFirstResult": true,
+                "command": "pwsh -NoProfile -Command \"$env:VSTEST_HOST_DEBUG='1'; $dotnet = Start-Process dotnet -PassThru -WindowStyle Hidden -ArgumentList 'test','test/Unit/Unit.csproj','--configuration','Debug','--no-build'; $processId = $null; for($i=0; $i -lt 50 -and -not $processId; $i++){ $t = Get-Process -Name testhost -ErrorAction SilentlyContinue; if($t){ $processId = $t.Id; break }; Start-Sleep -Milliseconds 100; }; $processId\""
+            }
+        }
+    ]
+}

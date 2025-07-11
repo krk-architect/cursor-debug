@@ -1,0 +1,6 @@
+.vs/
+bin/
+obj/
+*.sln.DotSettings
+*.user
+repomix-output.md
